@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bang Aul Store - Jual Item & Akun Roblox</title>
+  <meta property="og:type"         content="website" />
+  <meta property="og:url"          content="https://play.google.com/store/apps/details?id=bang.aulstore" />
+  <meta property="og:title"        content="Bang Aul Store - Jual Item & Akun Roblox" />
+  <meta property="og:description"  content="Beli item dan akun Roblox murah, cepat dan aman. Stok lengkap, proses instan via WhatsApp!" />
+  <meta property="og:image"        content="https://play-lh.googleusercontent.com/icon" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Bang Aul Store - Jual Item & Akun Roblox" />
+  <meta name="twitter:description" content="Beli item dan akun Roblox murah, cepat dan aman. Stok lengkap, proses instan via WhatsApp!" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --nav-bg:#4096ff;--hero-bg:#4096ff;--primary:#1a3a6e;--accent:#2563eb;--red:#e8192c;--wa:#1a9e50;
+      --page-bg:#f0f6ff;--card-bg:#ffffff;--game-hdr:#dbeafe;--game-hdr-act:#bfdbfe;--text:#0f172a;
+      --text-muted:#64748b;--border:#dbeafe;--card-shadow:0 4px 18px rgba(26,58,110,.12);
+      --filter-note:#f1f5ff;--bottom-bg:#ffffff;--bottom-border:#dbeafe;--review-bg:#eef4ff;--review-card:#ffffff;
+    }
+    [data-theme="dark"] {
+      --nav-bg:#1e40af;--hero-bg:#1e40af;--primary:#93c5fd;--accent:#60a5fa;--red:#f87171;--wa:#22c55e;
+      --page-bg:#0f172a;--card-bg:#1e293b;--game-hdr:#1e3a5f;--game-hdr-act:#1d4ed8;--text:#f1f5f9;
+      --text-muted:#94a3b8;--border:#334155;--card-shadow:0 4px 18px rgba(0,0,0,.4);--filter-note:#1e293b;
+      --bottom-bg:#1e293b;--bottom-border:#334155;--review-bg:#1e293b;--review-card:#273549;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--page-bg);color:var(--text);padding-bottom:68px;transition:background .3s,color .3s}
+    .navbar{background:var(--nav-bg);padding:10px 12px;position:sticky;top:0;z-index:999;box-shadow:0 2px 10px rgba(0,0,0,.2);display:flex;align-items:center;gap:8px;transition:background .3s}
+    .navbar-brand-title{font-size:1.1rem;font-weight:800;letter-spacing:.5px;color:#fff;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .btn-theme{background:rgba(255,255,255,.2);border:1.5px solid rgba(255,255,255,.35);color:#fff;border-radius:20px;padding:4px 10px;font-size:.75rem;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:5px;transition:background .2s;white-space:nowrap;flex-shrink:0}
+    .btn-theme:hover{background:rgba(255,255,255,.32)}
+    .lang-dropdown-wrap{position:relative;flex-shrink:0}
+    .lang-dropdown-btn{background:rgba(255,255,255,.2);border:1.5px solid rgba(255,255,255,.35);color:#fff;border-radius:20px;padding:4px 10px;font-size:.75rem;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:5px;transition:background .2s;white-space:nowrap}
+    .lang-dropdown-btn:hover{background:rgba(255,255,255,.32)}
+    .lang-menu{display:none;position:absolute;top:calc(100% + 6px);right:0;background:var(--card-bg);border:1.5px solid var(--border);border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.18);overflow:hidden;min-width:140px;z-index:1000}
+    .lang-menu.open{display:block}
+    .lang-menu-item{display:flex;align-items:center;gap:8px;padding:10px 14px;font-size:.82rem;font-weight:700;color:var(--text);cursor:pointer;transition:background .15s}
+    .lang-menu-item:hover{background:var(--game-hdr)}
+    .lang-menu-item.active{color:var(--accent);background:var(--filter-note)}
+    .lang-menu-item+.lang-menu-item{border-top:1px solid var(--border)}
+    .hero{background:var(--hero-bg);color:#fff;padding:28px 20px 24px;text-align:center;position:relative;overflow:hidden;transition:background .3s}
+    .hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.12) 1px,transparent 1px);background-size:22px 22px;pointer-events:none}
+    .hero-badge{display:inline-block;background:var(--red);color:#fff;font-size:.68rem;font-weight:800;padding:3px 13px;border-radius:20px;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;position:relative}
+    .hero h1{font-size:2rem;font-weight:700;margin-bottom:6px;color:#fff;position:relative}
+    .hero p{font-size:.88rem;opacity:.88;color:#fff;position:relative}
+
+    /* HERO STATS */
+    .hero-stats{display:flex;align-items:center;justify-content:center;gap:0;margin:14px auto 12px;background:rgba(255,255,255,.15);border-radius:14px;padding:10px 16px;max-width:340px;backdrop-filter:blur(4px)}
+    .hero-stat{display:flex;flex-direction:column;align-items:center;flex:1}
+    .hero-stat-val{font-size:.95rem;font-weight:800;color:#fff;line-height:1.2}
+    .hero-stat-lbl{font-size:.6rem;color:rgba(255,255,255,.8);font-weight:600;margin-top:2px;text-align:center}
+    .hero-stat-divider{width:1px;height:32px;background:rgba(255,255,255,.3);flex-shrink:0;margin:0 8px}
+    .hero-wa-btn{display:inline-flex;align-items:center;gap:8px;background:#22c55e;color:#fff;border-radius:24px;padding:9px 22px;font-size:.82rem;font-weight:800;text-decoration:none;box-shadow:0 4px 14px rgba(34,197,94,.4);position:relative;transition:transform .12s,box-shadow .12s}
+    .hero-wa-btn:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(34,197,94,.5);color:#fff}
+    .hero-wa-btn:active{transform:scale(.96)}
+    .hero-wa-btn i{font-size:1.1rem}
+
+    /* SOCIAL MEDIA BUTTONS */
+    .hero-social-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:12px;flex-wrap:wrap}
+    .hero-social-btn{display:inline-flex;align-items:center;gap:7px;border-radius:24px;padding:8px 18px;font-size:.78rem;font-weight:800;text-decoration:none;transition:transform .12s,box-shadow .12s;white-space:nowrap;position:relative}
+    .hero-social-btn:hover{transform:translateY(-1px);color:#fff}
+    .hero-social-btn:active{transform:scale(.96)}
+    .hero-social-btn i{font-size:.95rem}
+    .hero-social-btn.discord{background:#5865F2;color:#fff;box-shadow:0 4px 14px rgba(88,101,242,.4)}
+    .hero-social-btn.discord:hover{box-shadow:0 6px 18px rgba(88,101,242,.55);color:#fff}
+    .hero-social-btn.donate{background:linear-gradient(135deg,#f43f7f,#e11d6a);color:#fff;box-shadow:0 4px 14px rgba(244,63,127,.4)}
+    .hero-social-btn.donate:hover{box-shadow:0 6px 18px rgba(244,63,127,.55);color:#fff}
+
+    /* MENGAPA BELI DI SINI */
+    .why-us{margin:14px 12px 0;border-radius:16px;background:var(--card-bg);border:1.5px solid var(--border);padding:14px 12px;box-shadow:var(--card-shadow)}
+    .why-us h6{font-weight:800;font-size:.95rem;color:var(--primary);margin-bottom:12px;display:flex;align-items:center;gap:6px}
+    .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+    .why-item{background:var(--filter-note);border-radius:12px;padding:10px 11px;display:flex;align-items:flex-start;gap:9px;border:1.5px solid var(--border)}
+    .why-icon{font-size:1.5rem;flex-shrink:0;line-height:1}
+    .why-body{}
+    .why-title{font-size:.78rem;font-weight:800;color:var(--text);line-height:1.2;margin-bottom:2px}
+    .why-desc{font-size:.66rem;color:var(--text-muted);line-height:1.4}
+
+    /* FOOTER WA STRIP */
+    .footer-wa{margin:0 12px 16px;border-radius:14px;background:linear-gradient(135deg,#16a34a,#065f46);padding:14px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 4px 16px rgba(22,163,74,.3)}
+    .footer-wa-text{flex:1}
+    .footer-wa-text p{font-size:.75rem;color:rgba(255,255,255,.85);margin:0}
+    .footer-wa-text strong{font-size:.92rem;color:#fff;display:block;margin-bottom:2px}
+    .footer-wa-num{font-size:.82rem;font-weight:800;color:#fff;background:rgba(255,255,255,.2);border-radius:8px;padding:4px 12px;white-space:nowrap;flex-shrink:0;border:1.5px solid rgba(255,255,255,.35);cursor:pointer;transition:background .15s}
+    .footer-wa-num:hover{background:rgba(255,255,255,.32)}
+    .promo-slider{margin:14px 12px 0;border-radius:14px;overflow:hidden;position:relative;box-shadow:0 4px 16px rgba(0,0,0,.18)}
+    .promo-track{display:flex;transition:transform .5s cubic-bezier(.4,0,.2,1)}
+    .promo-slide{min-width:100%;padding:16px 18px;display:flex;align-items:center;gap:14px;color:#fff;position:relative;overflow:hidden}
+    .promo-slide::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.1) 1px,transparent 1px);background-size:18px 18px;pointer-events:none}
+    .promo-slide-icon{font-size:2.2rem;flex-shrink:0;position:relative}
+    .promo-slide-body{flex:1;position:relative}
+    .promo-slide-body h6{font-size:1rem;font-weight:800;margin:0 0 3px}
+    .promo-slide-body p{font-size:.75rem;margin:0;opacity:.92;line-height:1.4}
+    .promo-slide.s1{background:linear-gradient(135deg,#e8192c,#c0112a)}
+    .promo-slide.s2{background:linear-gradient(135deg,#2563eb,#1a3a8f)}
+    .promo-slide.s3{background:linear-gradient(135deg,#059669,#065f46)}
+    .promo-slide.s4{background:linear-gradient(135deg,#d97706,#92400e)}
+    .promo-dots{position:absolute;bottom:7px;right:12px;display:flex;gap:5px;z-index:2}
+    .promo-dot{width:6px;height:6px;border-radius:3px;background:rgba(255,255,255,.45);transition:width .3s,background .3s;cursor:pointer}
+    .promo-dot.active{width:18px;background:#fff}
+    .playstore-banner{margin:14px 12px 0;border-radius:16px;background:linear-gradient(135deg,#0d6efd 0%,#0a3d91 60%,#021f5c 100%);padding:16px 16px;display:flex;align-items:center;gap:14px;box-shadow:0 6px 24px rgba(13,110,253,.35);position:relative;overflow:hidden;cursor:pointer;transition:transform .15s,box-shadow .15s;text-decoration:none}
+    .playstore-banner:active{transform:scale(.98)}
+    .playstore-banner:hover{box-shadow:0 8px 28px rgba(13,110,253,.45)}
+    .playstore-banner::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.08) 1px,transparent 1px);background-size:16px 16px;pointer-events:none}
+    .playstore-banner::after{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.07);pointer-events:none}
+    .playstore-icon-wrap{width:52px;height:52px;border-radius:14px;background:rgba(255,255,255,.18);border:1.5px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:1.7rem;flex-shrink:0;position:relative}
+    .playstore-body{flex:1;position:relative}
+    .playstore-body h6{font-size:.92rem;font-weight:800;color:#fff;margin:0 0 2px}
+    .playstore-body p{font-size:.7rem;color:rgba(255,255,255,.82);margin:0 0 8px;line-height:1.4}
+    .playstore-badge-wrap{display:flex;gap:7px;flex-wrap:wrap}
+    .playstore-dl-btn{display:inline-flex;align-items:center;gap:6px;background:#fff;color:#0d6efd;border-radius:22px;padding:5px 14px;font-size:.72rem;font-weight:800;text-decoration:none;flex-shrink:0;transition:background .15s,transform .1s;box-shadow:0 2px 8px rgba(0,0,0,.15);border:none;cursor:pointer}
+    .playstore-dl-btn:hover{background:#e8f0ff;color:#0d6efd}
+    .playstore-dl-btn:active{transform:scale(.95)}
+    .playstore-share-btn{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.18);color:#fff;border:1.5px solid rgba(255,255,255,.35);border-radius:22px;padding:5px 14px;font-size:.72rem;font-weight:800;cursor:pointer;flex-shrink:0;transition:background .15s,transform .1s}
+    .playstore-share-btn:hover{background:rgba(255,255,255,.28)}
+    .playstore-share-btn:active{transform:scale(.95)}
+    .toast-notif{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:#1e293b;color:#fff;font-size:.8rem;font-weight:700;padding:9px 20px;border-radius:22px;box-shadow:0 4px 18px rgba(0,0,0,.3);z-index:9999;opacity:0;transition:opacity .3s,transform .3s;pointer-events:none;white-space:nowrap}
+    .toast-notif.show{opacity:1;transform:translateX(-50%) translateY(0)}
+    .cara-beli{margin:14px 12px 0;border-radius:14px;background:var(--card-bg);border:1.5px solid var(--border);padding:14px 12px;box-shadow:var(--card-shadow)}
+    .cara-beli h6{font-weight:800;font-size:.95rem;color:var(--primary);margin-bottom:12px;display:flex;align-items:center;gap:6px}
+    .cara-beli-steps{display:flex;gap:0;width:100%}
+    .step{display:flex;flex-direction:column;align-items:center;flex:1;text-align:center;position:relative;min-width:0}
+    .step:not(:last-child)::after{content:'';position:absolute;top:15px;left:58%;width:calc(100% - 20px);height:2px;background:linear-gradient(90deg,var(--accent),var(--border))}
+    .step-num{width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font-size:.75rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:5px;flex-shrink:0;position:relative;z-index:1;box-shadow:0 2px 8px rgba(37,99,235,.3)}
+    .step-label{font-size:.58rem;font-weight:700;color:var(--text-muted);line-height:1.3;word-break:keep-all}
+    .jam-aktif{margin:10px 12px 0;border-radius:14px;background:var(--card-bg);border:1.5px solid var(--border);padding:11px 16px;display:flex;align-items:center;gap:12px;box-shadow:var(--card-shadow)}
+    .jam-dot{width:10px;height:10px;border-radius:50%;background:#22c55e;flex-shrink:0;box-shadow:0 0 0 3px rgba(34,197,94,.2);animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{box-shadow:0 0 0 3px rgba(34,197,94,.2)}50%{box-shadow:0 0 0 6px rgba(34,197,94,.08)}}
+    .jam-text{font-size:.78rem;color:var(--text);flex:1}
+    .jam-text strong{color:var(--accent)}
+    .section-title{font-size:1.2rem;font-weight:700;color:var(--text);display:flex;align-items:center;gap:8px;margin:20px 14px 10px}
+    .section-title .line{flex:1;height:2px;background:linear-gradient(90deg,var(--accent),transparent)}
+    .game-review-section{margin-top:14px;padding-top:12px;border-top:1.5px solid var(--border)}
+    .game-review-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+    .game-review-header span{font-size:.78rem;font-weight:800;color:var(--text-muted);display:flex;align-items:center;gap:5px}
+    .game-review-wrap{overflow:hidden;position:relative;border-radius:10px}
+    .game-review-wrap::before,.game-review-wrap::after{content:'';position:absolute;top:0;bottom:0;width:24px;z-index:2;pointer-events:none}
+    .game-review-wrap::before{left:0;background:linear-gradient(90deg,var(--card-bg),transparent)}
+    .game-review-wrap::after{right:0;background:linear-gradient(-90deg,var(--card-bg),transparent)}
+    .game-review-track{display:flex;gap:10px;width:max-content;padding:4px 4px 6px;animation:reviewSlide 20s linear infinite}
+    .game-review-track:hover{animation-play-state:paused}
+    .game-review-card{background:var(--filter-note);border:1.5px solid var(--border);border-radius:12px;padding:10px 13px;min-width:190px;max-width:190px;flex-shrink:0}
+    .game-review-card .review-stars{color:#f59e0b;font-size:.85rem;margin-bottom:4px}
+    .game-review-card .review-text{font-size:.74rem;color:var(--text);line-height:1.5;margin-bottom:7px}
+    .game-review-card .review-author{display:flex;align-items:center;gap:7px}
+    .game-review-card .review-avatar{width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;font-size:.65rem;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .game-review-card .review-name{font-size:.7rem;font-weight:800;color:var(--text)}
+    .no-review-note{font-size:.74rem;color:var(--text-muted);text-align:center;padding:10px 0 4px;font-style:italic}
+    .review-section{background:var(--review-bg);padding:14px 0 18px;transition:background .3s;overflow:hidden}
+    .review-track-wrap{overflow:hidden;position:relative}
+    .review-track-wrap::before,.review-track-wrap::after{content:'';position:absolute;top:0;bottom:0;width:40px;z-index:2;pointer-events:none}
+    .review-track-wrap::before{left:0;background:linear-gradient(90deg,var(--review-bg),transparent)}
+    .review-track-wrap::after{right:0;background:linear-gradient(-90deg,var(--review-bg),transparent)}
+    .review-track{display:flex;gap:12px;width:max-content;animation:reviewSlide 28s linear infinite;padding:4px 8px}
+    .review-track:hover{animation-play-state:paused}
+    @keyframes reviewSlide{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    .review-card{background:var(--review-card);border-radius:14px;padding:13px 16px;min-width:210px;max-width:210px;box-shadow:0 2px 10px rgba(0,0,0,.08);border:1.5px solid var(--border);flex-shrink:0;transition:background .3s}
+    .review-stars{color:#f59e0b;font-size:.95rem;margin-bottom:5px}
+    .review-text{font-size:.78rem;color:var(--text);line-height:1.5;margin-bottom:8px}
+    .review-author{display:flex;align-items:center;gap:8px}
+    .review-avatar{width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-size:.72rem;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .review-name{font-size:.75rem;font-weight:800;color:var(--text)}
+    .review-game{font-size:.68rem;color:var(--text-muted)}
+    .game-list{padding:0 12px}
+    .game-item{background:var(--card-bg);border-radius:16px;margin-bottom:12px;box-shadow:var(--card-shadow);overflow:hidden;border:2px solid transparent;transition:border-color .25s,background .3s}
+    .game-item.active{border-color:var(--accent)}
+    .game-header{cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;position:relative;overflow:hidden;transition:background .2s}
+    .game-banner-wrap{position:relative;width:100%;aspect-ratio:16/5;overflow:hidden}
+    .game-banner-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}
+    .game-header:hover .game-banner-wrap img,.game-item.active .game-banner-wrap img{transform:scale(1.04)}
+    .game-banner-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.08) 0%,rgba(0,0,0,.55) 70%,rgba(0,0,0,.75) 100%);display:flex;align-items:flex-end;padding:10px 14px}
+    .game-banner-info{flex:1;min-width:0}
+    .game-name{font-size:1rem;font-weight:800;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.5);line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .game-desc{font-size:.7rem;color:rgba(255,255,255,.82);font-weight:600;margin-top:2px}
+    .game-item.active .game-banner-overlay{background:linear-gradient(to bottom,rgba(37,99,235,.15) 0%,rgba(37,99,235,.5) 70%,rgba(37,99,235,.72) 100%)}
+    .chevron{font-size:1.1rem;color:#fff;transition:transform .3s;flex-shrink:0;background:rgba(0,0,0,.35);border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;margin-left:8px}
+    .game-item.active .chevron{transform:rotate(180deg)}
+    .products-panel{max-height:0;overflow:hidden;transition:max-height .4s ease;padding:0 12px;background:var(--card-bg)}
+    .products-panel.show{max-height:3000px;padding-bottom:14px}
+    .filter-bar{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0 10px}
+    .filter-btn{font-size:.72rem;font-weight:700;padding:4px 13px;border-radius:20px;border:1.5px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer;transition:.18s}
+    .filter-btn.active,.filter-btn:hover{background:var(--accent);color:#fff}
+    .filter-note{font-size:.7rem;color:var(--text-muted);background:var(--filter-note);border-radius:8px;padding:6px 10px;margin-bottom:10px;border-left:3px solid var(--accent)}
+    .products-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    @media(min-width:460px){.products-grid{grid-template-columns:repeat(3,1fr)}}
+    .product-card{background:var(--card-bg);border-radius:13px;overflow:hidden;position:relative;border:1.5px solid var(--border);box-shadow:0 2px 8px rgba(37,99,235,.07);transition:transform .15s,background .3s;display:flex;flex-direction:column}
+    .product-card:active{transform:scale(.97)}
+    .product-card.popular::before{content:'🔥 HOT';position:absolute;top:-1px;left:8px;background:var(--red);color:#fff;font-size:.58rem;font-weight:800;padding:1px 8px;border-radius:0 0 8px 8px;z-index:2}
+    .product-card.habis{opacity:.6;pointer-events:none}
+    .product-card.habis::after{content:'HABIS';position:absolute;top:-1px;right:8px;background:#64748b;color:#fff;font-size:.58rem;font-weight:800;padding:1px 8px;border-radius:0 0 8px 8px;z-index:2}
+    .product-img-wrap{width:100%;aspect-ratio:2/1;overflow:hidden;background:var(--game-hdr);position:relative}
+    .product-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+    .product-card:hover .product-img-wrap img{transform:scale(1.06)}
+    .product-img-fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:2.2rem}
+    .product-body{padding:9px 10px 10px;display:flex;flex-direction:column;flex:1}
+    .product-name{font-size:.8rem;font-weight:800;color:var(--text);margin-bottom:2px;line-height:1.2}
+    .product-old-price{font-size:.68rem;color:var(--text-muted);text-decoration:line-through;margin-bottom:1px}
+    .product-price{font-size:.98rem;font-weight:700;color:var(--red);margin-bottom:8px;flex:1;display:flex;align-items:flex-end}
+    .btn-buy-wa{width:100%;font-size:.75rem;font-weight:800;padding:7px 4px;border-radius:9px;color:#fff;border:none;cursor:pointer;position:relative;overflow:hidden;background:var(--wa);letter-spacing:.4px;box-shadow:0 3px 10px rgba(26,158,80,.3);transition:transform .1s;margin-top:auto;flex-shrink:0}
+    .btn-buy-wa:active{transform:scale(.96)}
+    .btn-buy-wa::after{content:'';position:absolute;top:-10%;left:-120%;width:60%;height:120%;background:linear-gradient(105deg,transparent 0%,rgba(255,255,255,.08) 30%,rgba(255,255,255,.38) 50%,rgba(255,255,255,.08) 70%,transparent 100%);animation:elegantSweep 3.5s ease-in-out infinite;pointer-events:none}
+    @keyframes elegantSweep{0%{left:-120%;opacity:1}45%{left:130%;opacity:1}46%{opacity:0}100%{left:130%;opacity:0}}
+    .btn-wa-big{color:#fff;font-weight:800;font-size:1rem;border:none;border-radius:12px;padding:13px;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;position:relative;overflow:hidden;background:var(--wa);box-shadow:0 4px 14px rgba(26,158,80,.35);transition:transform .1s}
+    .btn-wa-big:active{transform:scale(.98)}
+    .btn-wa-big::after{content:'';position:absolute;top:-10%;left:-120%;width:60%;height:120%;background:linear-gradient(105deg,transparent 0%,rgba(255,255,255,.08) 30%,rgba(255,255,255,.38) 50%,rgba(255,255,255,.08) 70%,transparent 100%);animation:elegantSweep 3.5s ease-in-out infinite;pointer-events:none}
+    .faq-section{padding:0 12px}
+    .faq-item{background:var(--card-bg);border-radius:12px;margin-bottom:8px;border:1.5px solid var(--border);overflow:hidden;box-shadow:0 2px 8px rgba(37,99,235,.05)}
+    .faq-q{padding:12px 14px;font-size:.83rem;font-weight:700;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none}
+    .faq-q i{color:var(--accent);transition:transform .3s;font-size:.9rem}
+    .faq-item.open .faq-q i{transform:rotate(180deg)}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;font-size:.78rem;color:var(--text-muted);line-height:1.6}
+    .faq-item.open .faq-a{max-height:200px}
+    .faq-a-inner{padding:0 14px 12px;border-top:1px solid var(--border);padding-top:10px}
+    .modal-content{border:none;border-radius:1rem;background:var(--card-bg)}
+    .modal-header{background:var(--nav-bg);color:#fff;border-radius:1rem 1rem 0 0!important}
+    .modal-header .btn-close{filter:invert(1)}
+    .form-label{font-weight:700;font-size:.84rem;color:var(--text)}
+    .form-control{font-size:.88rem;border-radius:10px;border:1.5px solid var(--border);background:var(--page-bg);color:var(--text)}
+    .form-control:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,.12)}
+    .modal-product-box{background:var(--filter-note);border:1.5px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:14px}
+    .share-modal-body{padding:20px 16px}
+    .share-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+    .share-opt-btn{display:flex;flex-direction:column;align-items:center;gap:6px;background:var(--filter-note);border:1.5px solid var(--border);border-radius:14px;padding:14px 8px;font-size:.72rem;font-weight:800;color:var(--text);cursor:pointer;transition:transform .12s,box-shadow .12s;text-decoration:none}
+    .share-opt-btn:hover{box-shadow:0 4px 14px rgba(0,0,0,.1);transform:translateY(-2px);color:var(--text)}
+    .share-opt-btn:active{transform:scale(.94)}
+    .share-opt-btn i{font-size:1.6rem}
+    .share-opt-btn.wa i{color:#22c55e}
+    .share-opt-btn.link i{color:var(--accent)}
+    .share-link-box{display:flex;gap:8px;align-items:center;background:var(--filter-note);border:1.5px solid var(--border);border-radius:10px;padding:9px 12px;font-size:.75rem;color:var(--text-muted)}
+    .share-link-box span{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .share-link-copy{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:4px 12px;font-size:.72rem;font-weight:800;cursor:pointer;flex-shrink:0;transition:opacity .15s}
+    .share-link-copy:active{opacity:.8}
+    .bottom-nav{position:fixed;bottom:0;left:0;right:0;background:var(--bottom-bg);border-top:1px solid var(--bottom-border);display:flex;z-index:998;box-shadow:0 -3px 14px rgba(0,0,0,.1);transition:background .3s}
+    .bottom-nav a{flex:1;text-align:center;padding:10px 0 8px;color:var(--text-muted);text-decoration:none;font-size:.64rem;font-weight:700}
+    .bottom-nav a.active{color:var(--accent)}
+    .bottom-nav a i{display:block;font-size:1.3rem;margin-bottom:1px}
+    .bottom-nav a.wa-link{color:#16a34a}
+    .bottom-nav a.share-link-nav{color:var(--accent);cursor:pointer}
+    .btn-tulis-ulasan{background:var(--nav-bg);color:#fff;border:none;border-radius:20px;padding:4px 12px;font-size:.72rem;font-weight:800;cursor:pointer;display:flex;align-items:center;gap:5px;white-space:nowrap;flex-shrink:0;transition:opacity .2s}
+    .btn-tulis-ulasan:hover{opacity:.85}
+    .star-picker{display:flex;gap:6px}
+    .star-picker span{font-size:2rem;cursor:pointer;color:#d1d5db;transition:color .15s,transform .1s;line-height:1}
+    .star-picker span.active{color:#f59e0b}
+    .star-picker span:hover{transform:scale(1.2)}
+    @media(max-width:359px){.game-name{font-size:.88rem}.game-desc{font-size:.62rem}.product-name{font-size:.72rem}.product-price{font-size:.88rem}.btn-buy-wa{font-size:.68rem;padding:6px 2px}.step-label{font-size:.52rem}.hero h1{font-size:1.55rem}.game-banner-wrap{aspect-ratio:16/6}}
+    @media(min-width:480px){.products-grid{grid-template-columns:repeat(3,1fr)}.product-name{font-size:.85rem}}
+    @media(min-width:600px){.hero h1{font-size:2.2rem}.game-name{font-size:1.1rem}.game-banner-wrap{aspect-ratio:16/4}}
+    .game-banner-wrap img,.product-img-wrap img{width:100%;height:100%;object-fit:cover;object-position:center center;display:block}
+    .btn-back-top{position:fixed;bottom:78px;right:14px;width:40px;height:40px;border-radius:50%;background:var(--accent);color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.1rem;z-index:997;box-shadow:0 3px 12px rgba(37,99,235,.4);opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;transform:translateY(10px)}
+    .btn-back-top.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+    .btn-back-top:active{transform:scale(.92)}
+    .sold-badge{font-size:.6rem;font-weight:800;color:#16a34a;background:#dcfce7;border-radius:6px;padding:2px 7px;margin-bottom:3px;display:inline-block;}
+    .stok-label{font-size:.6rem;font-weight:800;padding:2px 7px;border-radius:6px;margin-bottom:3px;display:inline-block;}
+    .stok-label.warning{color:#b45309;background:#fef3c7;}
+    .stok-label.danger{color:#dc2626;background:#fee2e2;animation:blinkStok 1.2s ease-in-out infinite;}
+    @keyframes blinkStok{0%,100%{opacity:1}50%{opacity:.5}}
+    .wa-sticky{position:fixed;bottom:136px;right:14px;width:50px;height:50px;border-radius:50%;background:#22c55e;color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.55rem;z-index:996;box-shadow:0 4px 16px rgba(34,197,94,.45);transition:transform .2s;}
+    .wa-sticky:hover{transform:scale(1.1);}
+    .wa-sticky:active{transform:scale(.93);}
+    .wa-sticky-pulse{position:absolute;width:100%;height:100%;border-radius:50%;background:rgba(34,197,94,.35);animation:waPulse 2s ease-out infinite;pointer-events:none;}
+    @keyframes waPulse{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.9);opacity:0}}
+    .search-wrap{margin:0 12px 4px;position:relative;}
+    .search-input{width:100%;padding:9px 38px 9px 36px;border-radius:24px;border:1.5px solid var(--border);background:var(--card-bg);color:var(--text);font-size:.82rem;font-weight:600;outline:none;transition:border-color .2s,box-shadow .2s;}
+    .search-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,.12);}
+    .search-input::placeholder{color:var(--text-muted);}
+    .search-left-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:1rem;pointer-events:none;}
+    .search-clear{position:absolute;right:13px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:.85rem;cursor:pointer;display:none;background:none;border:none;padding:2px;}
+    .search-result-info{font-size:.72rem;color:var(--text-muted);margin:2px 16px 6px;min-height:16px;}
+  </style>
+</head>
+<body>
+
+<div class="toast-notif" id="toastNotif">✅ Link berhasil disalin!</div>
+
+<nav class="navbar">
+<img src="https://i.ibb.co.com/3y9mTLTy/Desain-tanpa-judul-4.png" alt="Logo" 
+style="height:44px;width:44px;object-fit:cover;border-radius:10px;flex-shrink:0;" />
+<span class="navbar-brand-title">Bang Aul Store</span>
+  <div class="lang-dropdown-wrap" id="langWrap">
+    <button class="lang-dropdown-btn" onclick="toggleLangMenu()" id="langBtn">
+      🇮🇩 ID <i class="bi bi-chevron-down" style="font-size:.6rem"></i>
+    </button>
+    <div class="lang-menu" id="langMenu">
+      <div class="lang-menu-item active" onclick="setLang('id')" data-lang="id">🇮🇩 Indonesia</div>
+      <div class="lang-menu-item" onclick="setLang('en')" data-lang="en">🇬🇧 English</div>
+      <div class="lang-menu-item" onclick="setLang('my')" data-lang="my">🇲🇾 Malaysia</div>
+    </div>
+  </div>
+  <button class="btn-theme" onclick="toggleTheme()" id="themeBtn">
+    <i class="bi bi-moon-fill" id="themeIcon"></i>
+    <span id="themeLabel">Gelap</span>
+  </button>
+</nav>
+
+<div class="hero">
+  <div class="hero-badge" data-i18n="heroBadge">⚡ Order via WhatsApp</div>
+  <h1 data-i18n="heroTitle">Jual Item & Akun Roblox</h1>
+  <p data-i18n="heroSub">Cepat · Aman · Terpercaya — Chat WA, proses instan!</p>
+
+  <!-- RATING & STATS -->
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hero-stat-val">⭐ 4.9</span>
+      <span class="hero-stat-lbl" data-i18n="statRating">Rating Pembeli</span>
+    </div>
+    <div class="hero-stat-divider"></div>
+    <div class="hero-stat">
+      <span class="hero-stat-val">500+</span>
+      <span class="hero-stat-lbl" data-i18n="statBuyers">Transaksi Sukses</span>
+    </div>
+    <div class="hero-stat-divider"></div>
+    <div class="hero-stat">
+      <span class="hero-stat-val">🛡️ Aman</span>
+      <span class="hero-stat-lbl" data-i18n="statSafe">Garansi 24 Jam</span>
+    </div>
+  </div>
+
+  <!-- NOMOR WA VISIBLE -->
+  <a class="hero-wa-btn" onclick="openWAChat();return false;" href="#">
+    <i class="bi bi-whatsapp"></i>
+    <span data-i18n="heroWaBtn">Chat Sekarang · 0888-0415-2541</span>
+  </a>
+
+  <!-- ✨ SOCIAL MEDIA LINKS -->
+  <div class="hero-social-row">
+    <a class="hero-social-btn discord" href="https://discord.gg/ndF2R3EN9d" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" style="flex-shrink:0">
+        <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+      </svg>
+      Discord
+    </a>
+    <a class="hero-social-btn donate" href="https://sociabuzz.com/bang_aul/tribe" target="_blank" rel="noopener">
+      <i class="bi bi-heart-fill"></i>
+      Donate ❤️
+    </a>
+  </div>
+</div>
+
+<!-- PROMO SLIDER — 4 slide baru -->
+<div class="promo-slider">
+  <div class="promo-track" id="promoTrack">
+    <!-- Slide 1: Harga Terbaik -->
+    <div class="promo-slide s1">
+      <div class="promo-slide-icon">💰</div>
+      <div class="promo-slide-body">
+        <h6 data-i18n="promo1Title">Harga Terbaik!</h6>
+        <p data-i18n="promo1Sub">Harga paling murah se-Indonesia! Gak percaya? Cek sendiri & bandingkan. 😎</p>
+      </div>
+    </div>
+    <!-- Slide 2: Stok Tersedia -->
+    <div class="promo-slide s2">
+      <div class="promo-slide-icon">📦</div>
+      <div class="promo-slide-body">
+        <h6 data-i18n="promo2Title">Stok Selalu Tersedia!</h6>
+        <p data-i18n="promo2Sub">Stok akun & item update setiap hari. Habis? Auto restock! Nggak perlu nunggu lama.</p>
+      </div>
+    </div>
+    <!-- Slide 3: Cocok untuk Dijual Lagi -->
+    <div class="promo-slide s3">
+      <div class="promo-slide-icon">🤝</div>
+      <div class="promo-slide-body">
+        <h6 data-i18n="promo3Title">Cocok untuk Dijual Lagi!</h6>
+        <p data-i18n="promo3Sub">Harga grosir tersedia! Beli banyak, untung makin besar. Cocok buat reseller & dropshipper.</p>
+      </div>
+    </div>
+    <!-- Slide 4: Proses Cepat -->
+    <div class="promo-slide s4">
+      <div class="promo-slide-icon">⚡</div>
+      <div class="promo-slide-body">
+        <h6 data-i18n="promo4Title">Proses Super Cepat!</h6>
+        <p data-i18n="promo4Sub">Bayar → konfirmasi → akun langsung dikirim dalam hitungan menit. Gak pakai lama!</p>
+      </div>
+    </div>
+  </div>
+  <div class="promo-dots" id="promoDots"></div>
+</div>
+
+<div class="jam-aktif">
+  <div class="jam-dot"></div>
+  <div class="jam-text">
+    <strong data-i18n="jamTitle">Aktif setiap hari</strong> · Jam <strong>08.00 – 22.00 WIB</strong><br>
+    <span style="font-size:.7rem" data-i18n="jamSub">Di luar jam aktif? Tinggalkan pesan, kami balas segera! 😊</span>
+  </div>
+  <i class="bi bi-clock" style="color:var(--accent);font-size:1.2rem"></i>
+</div>
+
+<div class="search-wrap">
+  <i class="bi bi-search search-left-icon"></i>
+  <input class="search-input" id="searchInput" type="text" placeholder="Cari produk... (contoh: Buddha, Divine)" oninput="searchProducts(this.value)" />
+  <button class="search-clear" id="searchClear" onclick="clearSearch()"><i class="bi bi-x-lg"></i></button>
+</div>
+<div class="search-result-info" id="searchResultInfo"></div>
+
+<div class="section-title">
+  <i class="bi bi-joystick"></i> <span data-i18n="pilihGame">Pilih Game</span>
+  <div class="line"></div>
+</div>
+
+<div class="game-list">
+
+  <!-- ADOPT ME -->
+  <div class="game-item" data-game="adoptme">
+    <div class="game-header" onclick="toggleGame(this)">
+      <div class="game-banner-wrap">
+        <img src="https://i.ibb.co.com/ksbWbLzF/1-8.jpg" alt="Adopt Me" />
+      </div>
+      <div class="game-banner-overlay">
+        <div class="game-banner-info">
+          <div class="game-name">Adopt Me!</div>
+          <div class="game-desc">Roblox • Jual Akun</div>
+        </div>
+        <i class="bi bi-chevron-down chevron"></i>
+      </div>
+    </div>
+    <div class="products-panel">
+      <div class="cara-beli" style="margin:10px 0 4px;box-shadow:none;border-radius:10px;">
+        <h6 style="font-size:.78rem;margin-bottom:9px;"><i class="bi bi-info-circle-fill" style="color:var(--accent)"></i> Cara Beli</h6>
+        <div class="cara-beli-steps">
+          <div class="step"><div class="step-num">1</div><div class="step-label">Pilih<br>Produk</div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-label">Klik<br>Beli WA</div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-label">Isi<br>Username</div></div>
+          <div class="step"><div class="step-num">4</div><div class="step-label">Transfer<br>Bayar</div></div>
+          <div class="step"><div class="step-num">5</div><div class="step-label">Akun<br>Dikirim! 🎉</div></div>
+        </div>
+      </div>
+      <div class="filter-bar" id="filter-adoptme">
+        <button class="filter-btn active" onclick="filterProducts('adoptme','akun',this)">🎮 Akun</button>
+      </div>
+      <div class="filter-note">💡 Kategori lain (Pet, Item, dll) akan segera ditambahkan!</div>
+      <div class="products-grid" id="products-adoptme">
+        <div class="product-card popular" data-cat="akun" data-name="Akun 140k - 150k Bucks + 200 Age Up Potion" data-price="28000"
+             data-img="https://i.ibb.co.com/c01KPz3/140k-150k-bucks.png">
+          <div class="product-img-wrap"></div>
+          <div class="product-body">
+            <div class="product-name">Akun 140k - 150k Bucks + 200 Age Up Potion</div>
+            <span class="sold-badge">Terjual 143x</span>
+            <span class="stok-label warning">Stok 52 tersedia</span>
+            <div class="product-price">Rp 28.000</div>
+            <button class="btn-buy-wa" onclick="buyNow(this)"><i class="bi bi-whatsapp"></i> Beli Via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-review-section">
+        <div class="game-review-header">
+          <span><i class="bi bi-star-fill" style="color:#f59e0b"></i> Ulasan Pembeli</span>
+          <button class="btn-tulis-ulasan" onclick="openReviewModal('Adopt Me!')"><i class="bi bi-pencil-fill"></i> Tulis Ulasan</button>
+        </div>
+        <div class="game-review-wrap">
+          <div class="game-review-track" id="reviews-adoptme"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ESCAPE TSUNAMI -->
+  <div class="game-item" data-game="tsunami">
+    <div class="game-header" onclick="toggleGame(this)">
+      <div class="game-banner-wrap">
+        <img src="https://i.ibb.co.com/ycSMrzb2/1-1.png" alt="Escape Tsunami" />
+      </div>
+      <div class="game-banner-overlay">
+        <div class="game-banner-info">
+          <div class="game-name">Escape Tsunami For Brainrot</div>
+          <div class="game-desc">Roblox • Akun · Item · Brainrot</div>
+        </div>
+        <i class="bi bi-chevron-down chevron"></i>
+      </div>
+    </div>
+    <div class="products-panel">
+      <div class="cara-beli" style="margin:10px 0 4px;box-shadow:none;border-radius:10px;">
+        <h6 style="font-size:.78rem;margin-bottom:9px;"><i class="bi bi-info-circle-fill" style="color:var(--accent)"></i> Cara Beli</h6>
+        <div class="cara-beli-steps">
+          <div class="step"><div class="step-num">1</div><div class="step-label">Pilih<br>Produk</div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-label">Klik<br>Beli WA</div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-label">Isi<br>Username</div></div>
+          <div class="step"><div class="step-num">4</div><div class="step-label">Transfer<br>Bayar</div></div>
+          <div class="step"><div class="step-num">5</div><div class="step-label">Akun<br>Dikirim! 🎉</div></div>
+        </div>
+      </div>
+      <div class="filter-bar" id="filter-tsunami">
+        <button class="filter-btn active" onclick="filterProducts('tsunami','all',this)">Semua</button>
+        <button class="filter-btn" onclick="filterProducts('tsunami','akun',this)">🎮 Akun</button>
+        <button class="filter-btn" onclick="filterProducts('tsunami','item',this)">🎒 Item</button>
+        <button class="filter-btn" onclick="filterProducts('tsunami','brainrot',this)">🧠 Brainrot</button>
+      </div>
+      <div class="products-grid" id="products-tsunami">
+        <div class="product-card popular" data-cat="akun" data-name="Akun Escape Tsunami Isi 90 - 100 PCS Divine" data-price="82000"
+             data-img="https://i.ibb.co.com/SwYQWLLJ/divine.jpg">
+          <div class="product-img-wrap"></div>
+          <div class="product-body">
+            <div class="product-name">Akun Escape Tsunami isi 90 - 100 PCS Divine</div>
+            <span class="sold-badge">Terjual 87x</span>
+            <span class="stok-label warning">Stok 45 tersedia</span>
+            <div class="product-price">Rp 82.000</div>
+            <button class="btn-buy-wa" onclick="buyNow(this)"><i class="bi bi-whatsapp"></i> Beli Via WhatsApp</button>
+          </div>
+        </div>
+        <div class="product-card" data-cat="akun" data-name="Akun Escape Tsunami 90 - 100 PCS Gamer Base Skin" data-price="630000" data-old-price="970000"
+             data-img="https://i.ibb.co.com/Lz97G8Z1/divine-1.png">
+          <div class="product-img-wrap"></div>
+          <div class="product-body">
+            <div class="product-name">Akun Escape Tsunami 90 - 100 PCS Gamer Base Skin</div>
+            <span class="sold-badge">Terjual 34x</span>
+            <span class="stok-label warning">Stok 38 tersedia</span>
+            <div class="product-old-price">Rp 970.000</div>
+            <div class="product-price">Rp 630.000</div>
+            <button class="btn-buy-wa" onclick="buyNow(this)"><i class="bi bi-whatsapp"></i> Beli Via WhatsApp</button>
+          </div>
+        </div>
+        <div class="product-card popular" data-cat="brainrot" data-name="x3 Random Divine" data-price="5000"
+             data-img="https://i.ibb.co.com/B57LLPB1/gamer-base-skin-1.png">
+          <div class="product-img-wrap"></div>
+          <div class="product-body">
+            <div class="product-name">x3 Random Divine</div>
+            <span class="sold-badge">Terjual 198x</span>
+            <span class="stok-label warning">Stok 97 tersedia</span>
+            <div class="product-price">Rp 5.000</div>
+            <button class="btn-buy-wa" onclick="buyNow(this)"><i class="bi bi-whatsapp"></i> Beli Via WhatsApp</button>
+          </div>
+        </div>
+        <div class="product-card" data-cat="item" data-name="x1 Gamer Base Skin" data-price="12000"
+             data-img="https://i.ibb.co.com/HfqzJPgS/gamer-base-skin.png">
+          <div class="product-img-wrap"></div>
+          <div class="product-body">
+            <div class="product-name">x1 Gamer Base Skin</div>
+            <span class="sold-badge">Terjual 176x</span>
+            <span class="stok-label warning">Stok 83 tersedia</span>
+            <div class="product-price">Rp 12.000</div>
+            <button class="btn-buy-wa" onclick="buyNow(this)"><i class="bi bi-whatsapp"></i> Beli Via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-review-section">
+        <div class="game-review-header">
+          <span><i class="bi bi-star-fill" style="color:#f59e0b"></i> Ulasan Pembeli</span>
+          <button class="btn-tulis-ulasan" onclick="openReviewModal('Escape Tsunami For Brainrot')"><i class="bi bi-pencil-fill"></i> Tulis Ulasan</button>
+        </div>
+        <div class="game-review-wrap">
+          <div class="game-review-track" id="reviews-tsunami"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BLOX FRUIT -->
+  <div class="game-item" data-game="bloxfruit">
+    <div class="game-header" onclick="toggleGame(this)">
+      <div class="game-banner-wrap">
+        <img src="https://i.ibb.co.com/fVChFPrL/1-2.png" alt="Blox Fruit" />
+      </div>
+      <div class="game-banner-overlay">
+        <div class="game-banner-info">
+          <div class="game-name">Blox Fruit</div>
+          <div class="game-desc">Roblox • Akun · Item</div>
+        </div>
+        <i class="bi bi-chevron-down chevron"></i>
+      </div>
+    </div>
+    <div class="products-panel">
+      <div class="cara-beli" style="margin:10px 0 4px;box-shadow:none;border-radius:10px;">
+        <h6 style="font-size:.78rem;margin-bottom:9px;"><i class="bi bi-info-circle-fill" style="color:var(--accent)"></i> Cara Beli</h6>
+        <div class="cara-beli-steps">
+          <div class="step"><div class="step-num">1</div><div class="step-label">Pilih<br>Produk</div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-label">Klik<br>Beli WA</div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-label">Isi<br>Username</div></div>
+          <div class="step"><div class="step-num">4</div><div class="step-label">Transfer<br>Bayar</div></div>
+          <div class="step"><div class="step-num">5</div><div class="step-label">Akun<br>Dikirim! 🎉</div></div>
+        </div>
+      </div>
+      <div class="filter-bar" id="filter-bloxfruit">
+        <button class="filter-btn active" onclick="filterProducts('bloxfruit','all',this)">Semua</button>
+        <button class="filter-btn" onclick="filterProducts('bloxfruit','akun',this)">🎮 Akun</button>
+        <button class="filter-btn" onclick="filterProducts('bloxfruit','item',this)">🍎 Item / Buah</button>
+      </div>
+      <div class="products-grid" id="products-bloxfruit">
+        <div class="product-card" data-cat="akun" data-name="Akun Blox Fruit Level 1500" data-price="3000"
+             data-img="https://i.ibb.co.com/xq15g1T8/gamer-base-skin-2.png">
+          <div class="product-img-wrap"></div>
+          <div class="product-body">
+            <div class="product-name">Akun Blox Fruit Level 1500</div>
+            <span class="sold-badge">Terjual 200x</span>
+            <span class="stok-label warning">Stok 115 tersedia</span>
+            <div class="product-price">Rp 3.000</div>
+            <button class="btn-buy-wa" onclick="buyNow(this)"><i class="bi bi-whatsapp"></i> Beli Via WhatsApp</button>
+          </div>
+        </div>
+        <div class="product-card popular" data-cat="akun" data-name="Akun Blox Fruit Level 2800 (God Human + Buddha)" data-price="8000" data-old-price="15000"
+             data-img="https://i.ibb.co.com/hJ6v4Zf3/blox-fruit.png">
+          <div class="product-img-wrap"></div>
+          <div class="product-body">
+            <div class="product-name">Akun Blox Fruit Level 2800 (God Human + Buddha)</div>
+            <span class="sold-badge">Terjual 189x</span>
+            <span class="stok-label warning">Stok 88 tersedia</span>
+            <div class="product-old-price">Rp 15.000</div>
+            <div class="product-price">Rp 8.000</div>
+            <button class="btn-buy-wa" onclick="buyNow(this)"><i class="bi bi-whatsapp"></i> Beli Via WhatsApp</button>
+          </div>
+        </div>
+        <div class="product-card" data-cat="akun" data-name="Akun Blox Fruit Level 2800 (God Human + Portal)" data-price="8000"
+             data-img="https://i.ibb.co.com/gLH7zKYJ/blox-fruit-1.png">
+          <div class="product-img-wrap"></div>
+          <div class="product-body">
+            <div class="product-name">Akun Blox Fruit Level 2800 (God Human + Portal)</div>
+            <span class="sold-badge">Terjual 154x</span>
+            <span class="stok-label warning">Stok 74 tersedia</span>
+            <div class="product-price">Rp 8.000</div>
+            <button class="btn-buy-wa" onclick="buyNow(this)"><i class="bi bi-whatsapp"></i> Beli Via WhatsApp</button>
+          </div>
+        </div>
+        <div class="product-card popular" data-cat="akun" data-name="Akun Blox Fruit Level 2800 (God Human + Gas)" data-price="10000" data-old-price="25000"
+             data-img="https://i.ibb.co.com/JRqtdPf6/blox-fruit-2.png">
+          <div class="product-img-wrap"></div>
+          <div class="product-body">
+            <div class="product-name">Akun Blox Fruit Level 2800 (God Human + Gas)</div>
+            <span class="sold-badge">Terjual 112x</span>
+            <span class="stok-label warning">Stok 61 tersedia</span>
+            <div class="product-old-price">Rp 25.000</div>
+            <div class="product-price">Rp 10.000</div>
+            <button class="btn-buy-wa" onclick="buyNow(this)"><i class="bi bi-whatsapp"></i> Beli Via WhatsApp</button>
+          </div>
+        </div>
+        <div class="product-card" data-cat="akun" data-name="Akun Blox Fruit Level 2800 (God Human + Dough)" data-price="12000"
+             data-img="https://i.ibb.co.com/ds99WBT4/blox-fruit-3.png">
+          <div class="product-img-wrap"></div>
+          <div class="product-body">
+            <div class="product-name">Akun Blox Fruit Level 2800 (God Human + Dough)</div>
+            <span class="sold-badge">Terjual 97x</span>
+            <span class="stok-label warning">Stok 79 tersedia</span>
+            <div class="product-price">Rp 12.000</div>
+            <button class="btn-buy-wa" onclick="buyNow(this)"><i class="bi bi-whatsapp"></i> Beli Via WhatsApp</button>
+          </div>
+        </div>
+        <div class="product-card" data-cat="akun" data-name="Akun Blox Fruit Level 2800 (God Human + T-Rex)" data-price="12000"
+             data-img="https://i.ibb.co.com/WNBPWtQV/blox-fruit-4.png">
+          <div class="product-img-wrap"></div>
+          <div class="product-body">
+            <div class="product-name">Akun Blox Fruit Level 2800 (God Human + T-Rex)</div>
+            <span class="sold-badge">Terjual 83x</span>
+            <span class="stok-label warning">Stok 66 tersedia</span>
+            <div class="product-price">Rp 12.000</div>
+            <button class="btn-buy-wa" onclick="buyNow(this)"><i class="bi bi-whatsapp"></i> Beli Via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-review-section">
+        <div class="game-review-header">
+          <span><i class="bi bi-star-fill" style="color:#f59e0b"></i> Ulasan Pembeli</span>
+          <button class="btn-tulis-ulasan" onclick="openReviewModal('Blox Fruit')"><i class="bi bi-pencil-fill"></i> Tulis Ulasan</button>
+        </div>
+        <div class="game-review-wrap">
+          <div class="game-review-track" id="reviews-bloxfruit"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 99 NIGHT IN THE FOREST -->
+  <div class="game-item" data-game="forest">
+    <div class="game-header" onclick="toggleGame(this)">
+      <div class="game-banner-wrap">
+        <img src="https://i.ibb.co.com/Kj985S9g/1-3.png" alt="99 Night in the Forest" />
+      </div>
+      <div class="game-banner-overlay">
+        <div class="game-banner-info">
+          <div class="game-name">99 Night in the Forest</div>
+          <div class="game-desc">Roblox • Jual Akun</div>
+        </div>
+        <i class="bi bi-chevron-down chevron"></i>
+      </div>
+    </div>
+    <div class="products-panel">
+      <div class="cara-beli" style="margin:10px 0 4px;box-shadow:none;border-radius:10px;">
+        <h6 style="font-size:.78rem;margin-bottom:9px;"><i class="bi bi-info-circle-fill" style="color:var(--accent)"></i> Cara Beli</h6>
+        <div class="cara-beli-steps">
+          <div class="step"><div class="step-num">1</div><div class="step-label">Pilih<br>Produk</div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-label">Klik<br>Beli WA</div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-label">Isi<br>Username</div></div>
+          <div class="step"><div class="step-num">4</div><div class="step-label">Transfer<br>Bayar</div></div>
+          <div class="step"><div class="step-num">5</div><div class="step-label">Akun<br>Dikirim! 🎉</div></div>
+        </div>
+      </div>
+      <div class="filter-bar" id="filter-forest">
+        <button class="filter-btn active" onclick="filterProducts('forest','akun',this)">🌲 Akun</button>
+      </div>
+      <div class="filter-note">💡 Kategori lain akan segera ditambahkan!</div>
+      <div class="products-grid" id="products-forest">
+        <div class="product-card popular" data-cat="akun" data-name="Akun 99 Night 600 Diamond" data-price="7000"
+             data-img="https://i.ibb.co.com/FqHT5rwN/99-night.png">
+          <div class="product-img-wrap"></div>
+          <div class="product-body">
+            <div class="product-name">Akun 99 Night 600 Diamond</div>
+            <span class="sold-badge">Terjual 167x</span>
+            <span class="stok-label warning">Stok 103 tersedia</span>
+            <div class="product-price">Rp 7.000</div>
+            <button class="btn-buy-wa" onclick="buyNow(this)"><i class="bi bi-whatsapp"></i> Beli Via WhatsApp</button>
+          </div>
+        </div>
+        <div class="product-card" data-cat="akun" data-name="Akun 99 Night Progressed" data-price="14000"
+             data-img="https://i.ibb.co.com/kgkcm3y8/99-night-1.png">
+          <div class="product-img-wrap"></div>
+          <div class="product-body">
+            <div class="product-name">Akun Progressed</div>
+            <span class="sold-badge">Terjual 128x</span>
+            <span class="stok-label warning">Stok 57 tersedia</span>
+            <div class="product-price">Rp 14.000</div>
+            <button class="btn-buy-wa" onclick="buyNow(this)"><i class="bi bi-whatsapp"></i> Beli Via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-review-section">
+        <div class="game-review-header">
+          <span><i class="bi bi-star-fill" style="color:#f59e0b"></i> Ulasan Pembeli</span>
+          <button class="btn-tulis-ulasan" onclick="openReviewModal('99 Night in the Forest')"><i class="bi bi-pencil-fill"></i> Tulis Ulasan</button>
+        </div>
+        <div class="game-review-wrap">
+          <div class="game-review-track" id="reviews-forest"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div style="height:16px"></div>
+
+<!-- MENGAPA BELI DI SINI -->
+<div class="why-us">
+  <h6><i class="bi bi-patch-check-fill" style="color:var(--accent)"></i> <span data-i18n="whyTitle">Mengapa Beli di Sini?</span></h6>
+  <div class="why-grid">
+    <div class="why-item">
+      <div class="why-icon">💰</div>
+      <div class="why-body">
+        <div class="why-title" data-i18n="why1title">Harga Terjangkau</div>
+        <div class="why-desc" data-i18n="why1desc">Harga paling murah, cocok buat beli sendiri atau dijual lagi</div>
+      </div>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">⚡</div>
+      <div class="why-body">
+        <div class="why-title" data-i18n="why2title">Proses Instan</div>
+        <div class="why-desc" data-i18n="why2desc">Akun & item dikirim dalam hitungan menit setelah bayar</div>
+      </div>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">🛡️</div>
+      <div class="why-body">
+        <div class="why-title" data-i18n="why3title">Garansi 24 Jam</div>
+        <div class="why-desc" data-i18n="why3desc">Ada masalah? Langsung ganti! Kepuasan pembeli nomor 1</div>
+      </div>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">🤝</div>
+      <div class="why-body">
+        <div class="why-title" data-i18n="why4title">500+ Pembeli Puas</div>
+        <div class="why-desc" data-i18n="why4desc">Ratusan transaksi sukses, seller terpercaya & berpengalaman</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PLAY STORE BANNER -->
+<div class="section-title">
+  <i class="bi bi-google-play" style="color:#01875f"></i> <span data-i18n="psTitle">Aplikasi Resmi di Play Store!</span>
+  <div class="line"></div>
+</div>
+<div style="padding:0 12px;margin-bottom:16px">
+  <div class="playstore-banner" id="playstorebanner" onclick="openShareModal()">
+    <div class="playstore-icon-wrap">📲</div>
+    <div class="playstore-body">
+      <h6 data-i18n="psBannerTitle">Download & Share App Kami!</h6>
+      <p data-i18n="psSub">Download app kami & bagikan ke teman-teman kamu sekarang.</p>
+      <div class="playstore-badge-wrap">
+        <button class="playstore-dl-btn" onclick="goPlayStore(event)">
+          <i class="bi bi-google-play" style="font-size:.9rem"></i> <span data-i18n="psDownload">Download App</span>
+        </button>
+        <button class="playstore-share-btn" onclick="openShareModal(event)">
+          <i class="bi bi-share-fill" style="font-size:.85rem"></i> <span data-i18n="psShare">Share App</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="section-title">
+  <i class="bi bi-question-circle-fill" style="color:var(--accent)"></i> <span data-i18n="faqTitle">FAQ</span>
+  <div class="line"></div>
+</div>
+<div class="faq-section">
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      <span data-i18n="faq1q">Apakah akun yang dijual aman?</span> <i class="bi bi-chevron-down"></i>
+    </div>
+    <div class="faq-a"><div class="faq-a-inner" data-i18n="faq1a">Semua akun sudah dicek dan dipastikan aman sebelum dijual. Kami memberikan garansi 1x24 jam setelah akun diterima.</div></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      <span data-i18n="faq2q">Berapa lama proses pengiriman akun?</span> <i class="bi bi-chevron-down"></i>
+    </div>
+    <div class="faq-a"><div class="faq-a-inner" data-i18n="faq2a">Setelah pembayaran dikonfirmasi, akun/item langsung dikirim via WA dalam waktu 5–30 menit (jam aktif). Di luar jam aktif maksimal pagi harinya.</div></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      <span data-i18n="faq3q">Metode pembayaran apa saja yang diterima?</span> <i class="bi bi-chevron-down"></i>
+    </div>
+    <div class="faq-a"><div class="faq-a-inner" data-i18n="faq3a">Kami menerima transfer bank (BCA, Mandiri, BRI, BNI), DANA, GoPay, OVO, dan ShopeePay. Konfirmasi via WA setelah transfer ya!</div></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      <span data-i18n="faq4q">Bagaimana jika ada masalah setelah beli?</span> <i class="bi bi-chevron-down"></i>
+    </div>
+    <div class="faq-a"><div class="faq-a-inner" data-i18n="faq4a">Hubungi kami langsung via WA. Kami siap membantu dan memberikan solusi terbaik. Kepuasan pembeli adalah prioritas kami!</div></div>
+  </div>
+</div>
+<div style="height:16px"></div>
+
+<!-- FOOTER WA STRIP -->
+<div class="section-title">
+  <i class="bi bi-whatsapp" style="color:#16a34a"></i> <span data-i18n="contactTitle">Hubungi Kami</span>
+  <div class="line"></div>
+</div>
+<div class="footer-wa" onclick="openWAChat()">
+  <i class="bi bi-whatsapp" style="font-size:2rem;color:#fff;flex-shrink:0"></i>
+  <div class="footer-wa-text">
+    <strong data-i18n="footerWaTitle">Bang Aul Store — Siap Melayani!</strong>
+    <p data-i18n="footerWaSub">Klik untuk chat langsung · Respon cepat jam 08.00–22.00 WIB</p>
+  </div>
+  <div class="footer-wa-num" onclick="openWAChat()">
+    <i class="bi bi-whatsapp"></i> 0888-0415-2541
+  </div>
+</div>
+
+<div style="height:8px"></div>
+<div class="modal fade" id="shareModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><i class="bi bi-share-fill"></i> <span data-i18n="shareModalTitle">Bagikan & Download App</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="share-modal-body">
+        <div style="background:linear-gradient(135deg,#0d6efd,#021f5c);border-radius:14px;padding:14px 16px;margin-bottom:16px;display:flex;align-items:center;gap:12px;">
+          <div style="font-size:2rem;flex-shrink:0">📲</div>
+          <div style="flex:1">
+            <div style="color:#fff;font-weight:800;font-size:.9rem;margin-bottom:4px" data-i18n="psModalTitle">App Resmi Bang Aul Store</div>
+            <div style="color:rgba(255,255,255,.8);font-size:.72rem;margin-bottom:10px" data-i18n="psModalSub">Download di Google Play Store sekarang!</div>
+            <a id="psLinkModal" href="#" target="_blank" onclick="goPlayStore(event)" style="display:inline-flex;align-items:center;gap:6px;background:#fff;color:#0d6efd;border-radius:20px;padding:6px 16px;font-size:.75rem;font-weight:800;text-decoration:none;">
+              <i class="bi bi-google-play"></i> <span data-i18n="psGetIt">Dapatkan di Play Store</span>
+            </a>
+          </div>
+        </div>
+        <div style="font-size:.8rem;font-weight:800;color:var(--text-muted);margin-bottom:10px;" data-i18n="shareVia">Bagikan via:</div>
+        <div class="share-options" style="grid-template-columns:repeat(2,1fr)">
+          <button class="share-opt-btn wa" onclick="shareVia('wa')">
+            <i class="bi bi-whatsapp"></i>WhatsApp
+          </button>
+          <button class="share-opt-btn link" onclick="copyShareLink()">
+            <i class="bi bi-link-45deg"></i>Salin Link
+          </button>
+        </div>
+        <div class="share-link-box">
+          <i class="bi bi-link-45deg" style="color:var(--accent);flex-shrink:0"></i>
+          <span id="shareLinkText">https://bangaulstore.app</span>
+          <button class="share-link-copy" onclick="copyShareLink()">Salin</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEW MODAL -->
+<div class="modal fade" id="reviewModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><i class="bi bi-star-fill" style="color:#fbbf24"></i> Tulis Ulasan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="filter-note mb-3">
+          💡 Ulasan kamu akan dikirim ke WhatsApp penjual untuk diverifikasi sebelum ditampilkan.
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Nama / Nickname</label>
+          <input type="text" class="form-control" id="rvName" placeholder="Misal: Rizky A." maxlength="30" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Game yang dibeli</label>
+          <select class="form-control" id="rvGame">
+            <option value="">-- Pilih Game --</option>
+            <option>Adopt Me!</option>
+            <option>Escape Tsunami For Brainrot</option>
+            <option>Blox Fruit</option>
+            <option>99 Night in the Forest</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Rating</label>
+          <div class="star-picker" id="starPicker">
+            <span data-val="1">☆</span>
+            <span data-val="2">☆</span>
+            <span data-val="3">☆</span>
+            <span data-val="4">☆</span>
+            <span data-val="5">☆</span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Ulasan kamu</label>
+          <textarea class="form-control" id="rvText" rows="3" placeholder="Ceritain pengalaman belanjamu..." maxlength="200"></textarea>
+          <div style="font-size:.7rem;color:var(--text-muted);text-align:right;margin-top:3px">
+            <span id="rvCount">0</span>/200
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer border-0 pt-0">
+        <button class="btn-wa-big" onclick="submitReview()">
+          <i class="bi bi-whatsapp"></i> Kirim Ulasan via WA
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BUY NOW MODAL -->
+<div class="modal fade" id="buyNowModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><i class="bi bi-whatsapp"></i> Beli via WhatsApp</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-product-box">
+          <div class="fw-bold mb-1" style="color:var(--accent)" id="buyNowProductName">-</div>
+          <div class="fw-bold fs-5" style="color:var(--red)" id="buyNowProductPrice">Rp 0</div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Username Roblox / ID</label>
+          <input type="text" class="form-control" id="buyNowUserId" placeholder="Masukkan username atau ID Roblox" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Catatan (opsional)</label>
+          <textarea class="form-control" id="buyNowNote" rows="2" placeholder="Misal: minta yang level sekian, dll"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer border-0 pt-0">
+        <button class="btn-wa-big" onclick="sendBuyNowWA()">
+          <i class="bi bi-whatsapp"></i> Lanjut Order WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="btn-back-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<button class="wa-sticky" onclick="openWAChat()" title="Chat WhatsApp">
+  <div class="wa-sticky-pulse"></div>
+  <i class="bi bi-whatsapp"></i>
+</button>
+
+<div class="bottom-nav">
+  <a href="#" class="active"><i class="bi bi-house-door-fill"></i><span data-i18n="navHome">Home</span></a>
+  <a href="#" class="wa-link" onclick="openWAChat();return false;"><i class="bi bi-whatsapp"></i><span data-i18n="navWA">Chat Whatsapp</span></a>
+  <a href="#" class="share-link-nav" onclick="openShareModal();return false;"><i class="bi bi-share-fill"></i><span data-i18n="navShare">Share App</span></a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const CONFIG = {
+    waNumber:     "62088804152541",
+    storeName:    "Bang Aul Store",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=bang.aulstore",
+    shareUrl:     "https://play.google.com/store/apps/details?id=bang.aulstore",
+    shareTitle:   "Bang Aul Store — Jual Item & Akun Roblox Terpercaya!",
+    shareText:    "Beli item & akun Roblox murah, cepat & aman di Bang Aul Store! Download app-nya sekarang:",
+    rates: { USD: 17000, MYR: 3200 }
+  };
+
+  function renderProductImages() {
+    document.querySelectorAll('.product-card').forEach(card => {
+      const wrap = card.querySelector('.product-img-wrap');
+      if (!wrap) return;
+      const imgUrl = card.dataset.img;
+      const icon   = card.dataset.icon || '🎮';
+      if (imgUrl) {
+        const img = document.createElement('img');
+        img.src = imgUrl;
+        img.alt = card.dataset.name || 'produk';
+        img.loading = 'lazy';
+        wrap.appendChild(img);
+      } else {
+        const fb = document.createElement('div');
+        fb.className = 'product-img-fallback';
+        fb.textContent = icon;
+        wrap.appendChild(fb);
+      }
+    });
+  }
+  renderProductImages();
+
+  const REVIEWS = [
+    { name:"Salsabila R.",  game:"Adopt Me!", stars:5, text:"Akunnya beneran 140k+ bucks, Age Up Potion-nya juga lengkap 200 pcs. Puas banget! 👍" },
+    { name:"Bima S.",       game:"Adopt Me!", stars:5, text:"Harga 28rb dapet bucks segitu banyak? Worth banget! Seller fast respon, recommended." },
+    { name:"Putri N.",      game:"Adopt Me!", stars:5, text:"Age Up Potion-nya masih full 200, bucks juga lebih dari 140k. Sesuai deskripsi 100%!" },
+    { name:"Kevin R.",      game:"Adopt Me!", stars:5, text:"Udah 2x beli akun Adopt Me di sini, selalu sesuai & aman. Trusted seller banget!" },
+    { name:"Dewi A.",       game:"Adopt Me!", stars:5, text:"Akunnya langsung bisa dipake, bucks buat jajan pet banyak. Makasih kak! 🔥" },
+    { name:"Rara M.",       game:"Adopt Me!", stars:5, text:"Beli buat dikasih adik, seneng banget dapet bucks + potion. Seller ramah & cepet!" },
+    { name:"Aldi F.",       game:"Adopt Me!", stars:5, text:"Prosesnya kilat, kurang dari 10 menit akun udah di tangan. Top seller!" },
+    { name:"Nadia K.",      game:"Adopt Me!", stars:5, text:"Bucks-nya real 140k lebih, potion juga 200 pcs. Gak menipu deh, mantap!" },
+    { name:"Daffa R.",      game:"Escape Tsunami For Brainrot", stars:5, text:"90-100 PCS Divine beneran, seller jujur & fast respon. Bakal order lagi!" },
+    { name:"Annisa W.",     game:"Escape Tsunami For Brainrot", stars:5, text:"Akun Gamer Base Skin-nya sesuai foto, proses cepet. Worth harganya!" },
+    { name:"Zaki F.",       game:"Escape Tsunami For Brainrot", stars:5, text:"x3 Random Divine cuma 5rb? Murah banget! Langsung dapet divine bagus." },
+    { name:"Leni S.",       game:"Escape Tsunami For Brainrot", stars:5, text:"Gamer Base Skin-nya beneran ada di akun, nggak zonk. Makasih kak!" },
+    { name:"Cahyo M.",      game:"Escape Tsunami For Brainrot", stars:5, text:"Beli akun 90+ divine, semua masuk. Seller amanah & fast! 5 bintang." },
+    { name:"Indri P.",      game:"Escape Tsunami For Brainrot", stars:5, text:"x1 Gamer Base Skin 12rb aja, langsung dapet. Harga paling murah nih!" },
+    { name:"Galih A.",      game:"Escape Tsunami For Brainrot", stars:5, text:"Random Divine-nya dapet yang bagus, beruntung banget. Thanks seller!" },
+    { name:"Nisa R.",       game:"Escape Tsunami For Brainrot", stars:5, text:"Transaksi aman, item masuk akun dalam 10 menit. Beli lagi pasti!" },
+    { name:"Rizky A.",      game:"Blox Fruit", stars:5, text:"Akun lv 1500 cuma 3rb? Buat latihan PvP perfect banget. Super worth!" },
+    { name:"Nanda P.",      game:"Blox Fruit", stars:5, text:"Beli akun lv 2800 God Human + Buddha, semua skill udah unlock. Mantap!" },
+    { name:"Farel M.",      game:"Blox Fruit", stars:5, text:"God Human + Portal combo keren banget buat grinding. Harga 8rb gila murahnya!" },
+    { name:"Yoga S.",       game:"Blox Fruit", stars:5, text:"Akun Gas lv 2800 dari 25rb jadi 10rb, untung banget dapet promo ini! 🔥" },
+    { name:"Hendra K.",     game:"Blox Fruit", stars:5, text:"Dough buah terkuat, dapet akun 12rb aja. Seller jujur & fast respon!" },
+    { name:"Mila D.",       game:"Blox Fruit", stars:5, text:"T-Rex + God Human = meta banget. Akunnya aman, seller terpercaya!" },
+    { name:"Rian B.",       game:"Blox Fruit", stars:5, text:"Beli lv 2800 Buddha, langsung bisa farm cepet. Recommended 100%!" },
+    { name:"Tania W.",      game:"Blox Fruit", stars:5, text:"Udah 3x beli akun Blox Fruit di sini, nggak pernah kecewa. Top seller!" },
+    { name:"Tiara K.",      game:"99 Night in the Forest", stars:5, text:"Akun 600 diamond cuma 7rb, langsung bisa beli item premium. Worth banget!" },
+    { name:"Wahyu D.",      game:"99 Night in the Forest", stars:5, text:"Akun Progressed-nya udah jauh banget progresnya, nggak perlu grind lama. 👍" },
+    { name:"Sinta L.",      game:"99 Night in the Forest", stars:5, text:"Diamond 600 masih ada semua pas dicek. Seller jujur & amanah!" },
+    { name:"Andre G.",      game:"99 Night in the Forest", stars:5, text:"Harga murah, seller fast respon. Akun Progressed sesuai deskripsi!" },
+    { name:"Fina M.",       game:"99 Night in the Forest", stars:5, text:"Beli akun 99 Night, langsung bisa main tanpa grind dari awal. Puas!" },
+    { name:"Doni R.",       game:"99 Night in the Forest", stars:5, text:"600 diamond real, gak zonk. Proses kiriman cepet banget. Makasih!" },
+    { name:"Ayu P.",        game:"99 Night in the Forest", stars:5, text:"Respon seller cepet, akun langsung dikirim. Aman & terpercaya!" },
+    { name:"Reza F.",       game:"99 Night in the Forest", stars:5, text:"Sudah 2x beli 99 Night di sini, selalu sesuai. Nggak bakal pindah seller!" },
+  ];
+
+  function openShareModal(e) {
+    if (e) e.stopPropagation();
+    document.getElementById('shareLinkText').textContent = CONFIG.shareUrl;
+    new bootstrap.Modal(document.getElementById('shareModal')).show();
+  }
+  function goPlayStore(e) {
+    if (e) e.stopPropagation();
+    window.open(CONFIG.playStoreUrl, '_blank');
+    const modal = bootstrap.Modal.getInstance(document.getElementById('shareModal'));
+    if (modal) modal.hide();
+  }
+  function shareVia(platform) {
+    const url  = CONFIG.shareUrl;
+    const text = CONFIG.shareText;
+    let link = '';
+    if (platform === 'wa') link = `https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`;
+    if (link) window.open(link, '_blank');
+  }
+  function copyShareLink() {
+    navigator.clipboard.writeText(CONFIG.shareUrl).then(() => {
+      showToast('✅ Link berhasil disalin!');
+    }).catch(() => {
+      const el = document.createElement('textarea');
+      el.value = CONFIG.shareUrl;
+      document.body.appendChild(el);
+      el.select(); document.execCommand('copy');
+      document.body.removeChild(el);
+      showToast('✅ Link berhasil disalin!');
+    });
+  }
+  function showToast(msg) {
+    const t = document.getElementById('toastNotif');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2800);
+  }
+
+  const GAME_REVIEW_MAP = {
+    'adoptme':   ['Adopt Me!'],
+    'tsunami':   ['Escape Tsunami', 'Escape Tsunami For Brainrot'],
+    'bloxfruit': ['Blox Fruit'],
+    'forest':    ['99 Night', '99 Night in the Forest'],
+  };
+  function buildGameReviews() {
+    Object.keys(GAME_REVIEW_MAP).forEach(gameId => {
+      const keywords = GAME_REVIEW_MAP[gameId];
+      const track = document.getElementById('reviews-' + gameId);
+      if (!track) return;
+      const matched = REVIEWS.filter(r =>
+        keywords.some(k => r.game.toLowerCase().includes(k.toLowerCase()))
+      );
+      if (matched.length === 0) {
+        track.parentElement.parentElement.innerHTML =
+          '<div class="no-review-note">Belum ada ulasan untuk game ini. Jadilah yang pertama! ✍️</div>';
+        return;
+      }
+      const list = matched.length < 3 ? [...matched, ...matched, ...matched] : [...matched, ...matched];
+      track.innerHTML = list.map(r => {
+        const stars = '★'.repeat(r.stars) + '☆'.repeat(5 - r.stars);
+        const initials = r.name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase();
+        return `
+          <div class="game-review-card">
+            <div class="review-stars">${stars}</div>
+            <div class="review-text">"${r.text}"</div>
+            <div class="review-author">
+              <div class="review-avatar">${initials}</div>
+              <div class="review-name">${r.name}</div>
+            </div>
+          </div>`;
+      }).join('');
+      track.style.animationDuration = (list.length * 4) + 's';
+    });
+  }
+  buildGameReviews();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    document.getElementById('themeIcon').className    = isDark ? 'bi bi-moon-fill' : 'bi bi-sun-fill';
+    document.getElementById('themeLabel').textContent = isDark ? 'Gelap' : 'Terang';
+  }
+
+  function toggleFaq(el) { el.closest('.faq-item').classList.toggle('open'); }
+
+  let selectedStars = 0;
+  function openReviewModal(preselectedGame) {
+    selectedStars = 0;
+    document.getElementById('rvName').value  = '';
+    document.getElementById('rvGame').value  = preselectedGame || '';
+    document.getElementById('rvText').value  = '';
+    document.getElementById('rvCount').textContent = '0';
+    updateStarUI();
+    new bootstrap.Modal(document.getElementById('reviewModal')).show();
+  }
+  function updateStarUI() {
+    document.querySelectorAll('#starPicker span').forEach((s, i) => {
+      s.textContent = i < selectedStars ? '★' : '☆';
+      s.classList.toggle('active', i < selectedStars);
+    });
+  }
+  document.querySelectorAll('#starPicker span').forEach(s => {
+    s.addEventListener('click', () => { selectedStars = parseInt(s.dataset.val); updateStarUI(); });
+    s.addEventListener('mouseover', () => {
+      document.querySelectorAll('#starPicker span').forEach((sp, i) => {
+        sp.textContent = i < parseInt(s.dataset.val) ? '★' : '☆';
+        sp.classList.toggle('active', i < parseInt(s.dataset.val));
+      });
+    });
+    s.addEventListener('mouseleave', updateStarUI);
+  });
+  document.getElementById('rvText').addEventListener('input', function() {
+    document.getElementById('rvCount').textContent = this.value.length;
+  });
+  function submitReview() {
+    const name  = document.getElementById('rvName').value.trim();
+    const game  = document.getElementById('rvGame').value;
+    const text  = document.getElementById('rvText').value.trim();
+    if (!name)          { alert('Nama tidak boleh kosong!'); return; }
+    if (!game)          { alert('Pilih game dulu!'); return; }
+    if (!selectedStars) { alert('Pilih rating bintang dulu!'); return; }
+    if (!text)          { alert('Tulis ulasannya dulu!'); return; }
+    const stars = '*'.repeat(selectedStars);
+    const msg = `*[ULASAN MASUK - PERLU APPROVE]*\n`
+      + `---------------------------\n`
+      + `Nama   : ${name}\nGame   : ${game}\nRating : ${stars} (${selectedStars}/5)\nUlasan : "${text}"\n---------------------------\n_Balas pesan ini jika ingin ditampilkan di toko._`;
+    window.open(`https://wa.me/${CONFIG.waNumber}?text=${encodeURIComponent(msg)}`, '_blank');
+    bootstrap.Modal.getInstance(document.getElementById('reviewModal')).hide();
+  }
+
+  function toggleGame(header) {
+    const item = header.closest('.game-item');
+    const wasActive = item.classList.contains('active');
+    document.querySelectorAll('.game-item').forEach(gi => {
+      gi.classList.remove('active');
+      gi.querySelector('.products-panel').classList.remove('show');
+    });
+    if (!wasActive) {
+      item.classList.add('active');
+      item.querySelector('.products-panel').classList.add('show');
+    }
+  }
+
+  function filterProducts(gameId, cat, btn) {
+    document.querySelectorAll(`#filter-${gameId} .filter-btn`).forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll(`#products-${gameId} .product-card`).forEach(card => {
+      card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+    });
+  }
+
+  function buyNow(btn) {
+    const card     = btn.closest('.product-card');
+    const gameItem = card.closest('.game-item');
+    const idr      = parseInt(card.dataset.price);
+    const priceEl  = document.getElementById('buyNowProductPrice');
+    const gameName = gameItem ? gameItem.querySelector('.game-name').textContent.trim() : '-';
+    const cat      = card.dataset.cat || '-';
+    document.getElementById('buyNowProductName').textContent = card.dataset.name;
+    priceEl.textContent  = formatPrice(idr, currentLang);
+    priceEl.dataset.idr  = idr;
+    priceEl.dataset.game = gameName;
+    priceEl.dataset.cat  = cat;
+    document.getElementById('buyNowUserId').value = '';
+    document.getElementById('buyNowNote').value   = '';
+    new bootstrap.Modal(document.getElementById('buyNowModal')).show();
+  }
+  function sendBuyNowWA() {
+    const name  = document.getElementById('buyNowProductName').textContent.trim();
+    const idr   = document.getElementById('buyNowProductPrice').dataset.idr;
+    const game  = document.getElementById('buyNowProductPrice').dataset.game || '-';
+    const cat   = document.getElementById('buyNowProductPrice').dataset.cat || '-';
+    const uid   = document.getElementById('buyNowUserId').value.trim();
+    const note  = document.getElementById('buyNowNote').value.trim();
+    if (!uid) { alert('Username / ID Roblox tidak boleh kosong!'); return; }
+    const harga = 'Rp ' + parseInt(idr).toLocaleString('id-ID');
+    const catLabel = cat === 'akun' ? 'Akun' : cat === 'item' ? 'Item' : cat === 'brainrot' ? 'Brainrot' : cat;
+    const noteLine = note ? `Catatan     : ${note}` : '';
+    const line = '---------------------------';
+    const msg = [
+      `*ORDER BARU - ${CONFIG.storeName}*`,
+      line,
+      `Game        : *${game}*`,
+      `Kategori    : *${catLabel}*`,
+      `Produk      : *${name}*`,
+      `Harga       : *${harga}*`,
+      `Username/ID : *${uid}*`,
+      noteLine,
+      line,
+      `Mohon konfirmasi stok & info rekening/QRIS untuk pembayaran ya kak!`,
+      ``,
+      `Terima kasih :)`,
+    ].filter(l => l !== null && l !== undefined && l !== '').join('\n');
+    window.open(`https://wa.me/${CONFIG.waNumber}?text=${encodeURIComponent(msg)}`, '_blank');
+    bootstrap.Modal.getInstance(document.getElementById('buyNowModal')).hide();
+  }
+
+  const backBtn = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backBtn.classList.toggle('show', window.scrollY > 300);
+  });
+
+  const LANG = {
+    id: {
+      heroBadge:'⚡ Order via WhatsApp', heroTitle:'Jual Item & Akun Roblox', heroSub:'Cepat · Aman · Terpercaya — Chat WA, proses instan!',
+      promo1Title:'Harga Terbaik!', promo1Sub:'Harga paling murah se-Indonesia! Gak percaya? Cek sendiri & bandingkan. 😎',
+      promo2Title:'Stok Selalu Tersedia!', promo2Sub:'Stok akun & item update setiap hari. Habis? Auto restock! Nggak perlu nunggu lama.',
+      promo3Title:'Cocok untuk Dijual Lagi!', promo3Sub:'Harga grosir tersedia! Beli banyak, untung makin besar. Cocok buat reseller & dropshipper.',
+      promo4Title:'Proses Super Cepat!', promo4Sub:'Bayar → konfirmasi → akun langsung dikirim dalam hitungan menit. Gak pakai lama!',
+      jamTitle:'Aktif setiap hari', jamSub:'Di luar jam aktif? Tinggalkan pesan, kami balas segera! 😊',
+      psTitle:'Aplikasi Resmi di Play Store!', psBannerTitle:'Download & Share App Kami!', psSub:'Download app kami & bagikan ke teman-teman kamu sekarang.', psDownload:'Download App', psShare:'Share App',
+      psModalTitle:'App Resmi Bang Aul Store', psModalSub:'Download di Google Play Store sekarang!', psGetIt:'Dapatkan di Play Store',
+      shareBtn:'Share', shareModalTitle:'Bagikan & Download App', shareVia:'Bagikan via:',
+      ulasanTitle:'Ulasan Pembeli', tulisUlasan:'Tulis Ulasan', pilihGame:'Pilih Game',
+      faqTitle:'FAQ',
+      faq1q:'Apakah akun yang dijual aman?', faq1a:'Semua akun sudah dicek dan dipastikan aman sebelum dijual. Kami memberikan garansi 1x24 jam setelah akun diterima.',
+      faq2q:'Berapa lama proses pengiriman akun?', faq2a:'Setelah pembayaran dikonfirmasi, akun/item langsung dikirim via WA dalam waktu 5–30 menit (jam aktif). Di luar jam aktif maksimal pagi harinya.',
+      faq3q:'Metode pembayaran apa saja yang diterima?', faq3a:'Kami menerima transfer bank (BCA, Mandiri, BRI, BNI), DANA, GoPay, OVO, dan ShopeePay. Konfirmasi via WA setelah transfer ya!',
+      faq4q:'Bagaimana jika ada masalah setelah beli?', faq4a:'Hubungi kami langsung via WA. Kami siap membantu dan memberikan solusi terbaik. Kepuasan pembeli adalah prioritas kami!',
+      navHome:'Home', navWA:'Chat Whatsapp', navShare:'Share App',
+      themeGelap:'Gelap', themeTerang:'Terang',
+      modalBuyTitle:'Beli via WhatsApp', modalBuyBtn:'Lanjut Order WhatsApp',
+      labelUsername:'Username Roblox / ID', labelNote:'Catatan (opsional)',
+      placeholderUsername:'Masukkan username atau ID Roblox', placeholderNote:'Misal: minta yang level sekian, dll',
+      modalReviewTitle:'Tulis Ulasan', modalReviewBtn:'Kirim Ulasan via WA',
+      labelNama:'Nama / Nickname', labelGame:'Game yang dibeli', labelRating:'Rating', labelUlasan:'Ulasan kamu',
+      placeholderNama:'Misal: Rizky A.', placeholderUlasan:'Ceritain pengalaman belanjamu...',
+      reviewNote:'💡 Ulasan kamu akan dikirim ke WhatsApp penjual untuk diverifikasi sebelum ditampilkan.',
+      pilihGameOpt:'-- Pilih Game --', beliWA:'Beli Via WhatsApp',
+      waMsg: (store) => `Halo *${store}*, saya ingin tanya tentang produk game. Bisa dibantu?`,
+      whyTitle:'Mengapa Beli di Sini?',
+      why1title:'Harga Terjangkau', why1desc:'Harga paling murah, cocok buat beli sendiri atau dijual lagi',
+      why2title:'Proses Instan', why2desc:'Akun & item dikirim dalam hitungan menit setelah bayar',
+      why3title:'Garansi 24 Jam', why3desc:'Ada masalah? Langsung ganti! Kepuasan pembeli nomor 1',
+      why4title:'500+ Pembeli Puas', why4desc:'Ratusan transaksi sukses, seller terpercaya & berpengalaman',
+      contactTitle:'Hubungi Kami',
+      footerWaTitle:'Bang Aul Store — Siap Melayani!',
+      footerWaSub:'Klik untuk chat langsung · Respon cepat jam 08.00–22.00 WIB',
+      statRating:'Rating Pembeli', statBuyers:'Transaksi Sukses', statSafe:'Garansi 24 Jam',
+      heroWaBtn:'Chat Sekarang · 0888-0415-2541',
+    },
+    en: {
+      heroBadge:'⚡ Order via WhatsApp', heroTitle:'Sell Roblox Items & Accounts', heroSub:'Fast · Safe · Trusted — Chat WA, instant process!',
+      promo1Title:'Best Prices!', promo1Sub:"Cheapest prices guaranteed! Don't believe it? Check and compare yourself. 😎",
+      promo2Title:'Always In Stock!', promo2Sub:'Our accounts & items are restocked daily. Out of stock? Auto restock, no long waits!',
+      promo3Title:'Perfect for Reselling!', promo3Sub:'Wholesale prices available! Buy more, earn more. Great for resellers & dropshippers.',
+      promo4Title:'Super Fast Process!', promo4Sub:'Pay → confirm → account delivered within minutes. No waiting around!',
+      jamTitle:'Active every day', jamSub:"Outside active hours? Leave a message, we'll reply soon! 😊",
+      psTitle:'Official App on Play Store!', psBannerTitle:'Download & Share Our App!', psSub:'Download & share our app with your friends.', psDownload:'Download App', psShare:'Share App',
+      psModalTitle:'Bang Aul Store Official App', psModalSub:'Download on Google Play Store now!', psGetIt:'Get it on Play Store',
+      shareBtn:'Share', shareModalTitle:'Share & Download App', shareVia:'Share via:',
+      ulasanTitle:'Buyer Reviews', tulisUlasan:'Write Review', pilihGame:'Choose Game',
+      faqTitle:'FAQ',
+      faq1q:'Are the accounts safe?', faq1a:'All accounts are checked and verified safe before selling. We provide a 24-hour guarantee.',
+      faq2q:'How long does delivery take?', faq2a:'After payment confirmed, account/item sent via WA within 5–30 minutes (active hours).',
+      faq3q:'What payment methods are accepted?', faq3a:'We accept PayPal and Crypto USDT (TRC20 / ERC20). Please confirm via WA after payment.',
+      faq4q:"What if there's a problem after buying?", faq4a:"Contact us directly via WA. We're ready to help. Buyer satisfaction is our priority!",
+      navHome:'Home', navWA:'Chat Whatsapp', navShare:'Share App',
+      themeGelap:'Dark', themeTerang:'Light',
+      modalBuyTitle:'Buy via WhatsApp', modalBuyBtn:'Continue Order WhatsApp',
+      labelUsername:'Roblox Username / ID', labelNote:'Notes (optional)',
+      placeholderUsername:'Enter Roblox username or ID', placeholderNote:'E.g.: request specific level, etc.',
+      modalReviewTitle:'Write a Review', modalReviewBtn:'Send Review via WA',
+      labelNama:'Name / Nickname', labelGame:'Game purchased', labelRating:'Rating', labelUlasan:'Your review',
+      placeholderNama:'E.g.: Alex S.', placeholderUlasan:'Tell us about your shopping experience...',
+      reviewNote:"💡 Your review will be sent to the seller's WhatsApp for verification.",
+      pilihGameOpt:'-- Select Game --', beliWA:'Buy Via WhatsApp',
+      waMsg: (store) => `Hello *${store}*, I want to ask about game products. Can you help?`,
+      whyTitle:'Why Buy Here?',
+      why1title:'Affordable Price', why1desc:'Cheapest prices, great for personal use or reselling',
+      why2title:'Instant Process', why2desc:'Account & items delivered within minutes after payment',
+      why3title:'24-Hour Guarantee', why3desc:'Any issue? Instant replacement! Buyer satisfaction is #1',
+      why4title:'500+ Happy Buyers', why4desc:'Hundreds of successful transactions, trusted & experienced seller',
+      contactTitle:'Contact Us',
+      footerWaTitle:'Bang Aul Store — Ready to Serve!',
+      footerWaSub:'Click to chat directly · Fast response 08.00–22.00 WIB',
+      statRating:'Buyer Rating', statBuyers:'Successful Orders', statSafe:'24Hr Guarantee',
+      heroWaBtn:'Chat Now · 0888-0415-2541',
+    },
+    my: {
+      heroBadge:'⚡ Pesan via WhatsApp', heroTitle:'Jual Item & Akaun Roblox', heroSub:'Pantas · Selamat · Dipercayai — Chat WA, proses segera!',
+      promo1Title:'Harga Terbaik!', promo1Sub:'Harga paling murah! Tak percaya? Cuba semak dan bandingkan sendiri. 😎',
+      promo2Title:'Stok Sentiasa Ada!', promo2Sub:'Stok akaun & item dikemas kini setiap hari. Habis? Auto restock! Tak payah tunggu lama.',
+      promo3Title:'Sesuai untuk Dijual Semula!', promo3Sub:'Harga borong tersedia! Beli lebih, untung lebih besar. Sesuai untuk reseller & dropshipper.',
+      promo4Title:'Proses Super Pantas!', promo4Sub:'Bayar → sahkan → akaun dihantar dalam beberapa minit. Tak payah tunggu!',
+      jamTitle:'Aktif setiap hari', jamSub:'Luar waktu aktif? Tinggalkan mesej, kami balas segera! 😊',
+      psTitle:'Aplikasi Rasmi di Play Store!', psBannerTitle:'Muat Turun & Kongsi App Kami!', psSub:'Muat turun & kongsikan app kami kepada rakan-rakan.', psDownload:'Muat Turun App', psShare:'Kongsi App',
+      psModalTitle:'App Rasmi Bang Aul Store', psModalSub:'Muat turun di Google Play Store sekarang!', psGetIt:'Dapatkan di Play Store',
+      shareBtn:'Kongsi', shareModalTitle:'Kongsi & Muat Turun App', shareVia:'Kongsi melalui:',
+      ulasanTitle:'Ulasan Pembeli', tulisUlasan:'Tulis Ulasan', pilihGame:'Pilih Permainan',
+      faqTitle:'Soalan Lazim',
+      faq1q:'Adakah akaun yang dijual selamat?', faq1a:'Semua akaun telah diperiksa dan dipastikan selamat. Kami memberikan jaminan 24 jam.',
+      faq2q:'Berapa lama proses penghantaran akaun?', faq2a:'Selepas pembayaran disahkan, akaun/item dihantar melalui WA dalam masa 5–30 minit.',
+      faq3q:'Kaedah pembayaran apa yang diterima?', faq3a:'Kami menerima pembayaran melalui QRIS. Sila sahkan pembayaran anda melalui WA.',
+      faq4q:'Bagaimana jika ada masalah selepas beli?', faq4a:'Hubungi kami terus melalui WA. Kepuasan pembeli adalah keutamaan kami!',
+      navHome:'Laman', navWA:'Chat Whatsapp', navShare:'Kongsi App',
+      themeGelap:'Gelap', themeTerang:'Cerah',
+      modalBuyTitle:'Beli via WhatsApp', modalBuyBtn:'Teruskan Pesanan WhatsApp',
+      labelUsername:'Username Roblox / ID', labelNote:'Catatan (pilihan)',
+      placeholderUsername:'Masukkan username atau ID Roblox', placeholderNote:'Cth: minta tahap tertentu, dll',
+      modalReviewTitle:'Tulis Ulasan', modalReviewBtn:'Hantar Ulasan via WA',
+      labelNama:'Nama / Nama Samaran', labelGame:'Permainan yang dibeli', labelRating:'Penilaian', labelUlasan:'Ulasan anda',
+      placeholderNama:'Cth: Ahmad R.', placeholderUlasan:'Ceritakan pengalaman membeli anda...',
+      reviewNote:'💡 Ulasan anda akan dihantar ke WhatsApp penjual untuk disahkan.',
+      pilihGameOpt:'-- Pilih Permainan --', beliWA:'Beli Via WhatsApp',
+      waMsg: (store) => `Helo *${store}*, saya ingin bertanya tentang produk permainan. Boleh bantu?`,
+      whyTitle:'Mengapa Beli Di Sini?',
+      why1title:'Harga Berpatutan', why1desc:'Harga paling murah, sesuai untuk kegunaan sendiri atau dijual semula',
+      why2title:'Proses Segera', why2desc:'Akaun & item dihantar dalam beberapa minit selepas bayar',
+      why3title:'Jaminan 24 Jam', why3desc:'Ada masalah? Terus ganti! Kepuasan pembeli nombor 1',
+      why4title:'500+ Pembeli Puas', why4desc:'Ratusan transaksi berjaya, penjual dipercayai & berpengalaman',
+      contactTitle:'Hubungi Kami',
+      footerWaTitle:'Bang Aul Store — Sedia Melayan!',
+      footerWaSub:'Klik untuk chat terus · Respon cepat jam 08.00–22.00 WIB',
+      statRating:'Rating Pembeli', statBuyers:'Transaksi Berjaya', statSafe:'Jaminan 24 Jam',
+      heroWaBtn:'Chat Sekarang · 0888-0415-2541',
+    }
+  };
+
+  const TOTAL_SLIDES = 4;
+  let promoIndex = 0;
+  let promoTimer;
+  function buildPromoDots() {
+    const dots = document.getElementById('promoDots');
+    dots.innerHTML = Array.from({length: TOTAL_SLIDES}, (_, i) =>
+      `<div class="promo-dot ${i===0?'active':''}" onclick="goPromo(${i})"></div>`
+    ).join('');
+  }
+  function goPromo(idx) {
+    promoIndex = idx;
+    document.getElementById('promoTrack').style.transform = `translateX(-${idx * 100}%)`;
+    document.querySelectorAll('.promo-dot').forEach((d, i) => d.classList.toggle('active', i === idx));
+    clearInterval(promoTimer);
+    promoTimer = setInterval(nextPromo, 3500);
+  }
+  function nextPromo() { goPromo((promoIndex + 1) % TOTAL_SLIDES); }
+  buildPromoDots();
+  promoTimer = setInterval(nextPromo, 3500);
+  (function(){
+    let startX = 0;
+    const el = document.getElementById('promoTrack');
+    el.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, {passive:true});
+    el.addEventListener('touchend', e => {
+      const diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) goPromo(diff > 0
+        ? (promoIndex + 1) % TOTAL_SLIDES
+        : (promoIndex - 1 + TOTAL_SLIDES) % TOTAL_SLIDES);
+    });
+  })();
+
+  let currentLang = 'id';
+  function toggleLangMenu() { document.getElementById('langMenu').classList.toggle('open'); }
+  document.addEventListener('click', function(e) {
+    if (!document.getElementById('langWrap').contains(e.target))
+      document.getElementById('langMenu').classList.remove('open');
+  });
+  const LANG_LABELS = { id: '🇮🇩 ID', en: '🇬🇧 EN', my: '🇲🇾 MY' };
+
+  function formatPrice(idr, lang) {
+    if (lang === 'en') {
+      const usd = idr / CONFIG.rates.USD;
+      const rounded = Math.ceil(usd / 0.05) * 0.05;
+      return '$' + rounded.toFixed(2);
+    } else if (lang === 'my') {
+      const myr = idr / CONFIG.rates.MYR;
+      const rounded = Math.ceil(myr / 0.5) * 0.5;
+      return 'RM ' + rounded.toFixed(2);
+    } else {
+      return 'Rp ' + parseInt(idr).toLocaleString('id-ID');
+    }
+  }
+  function updatePrices(lang) {
+    document.querySelectorAll('.product-card').forEach(card => {
+      const idr    = parseInt(card.dataset.price);
+      const oldIdr = parseInt(card.dataset.oldPrice);
+      const priceEl = card.querySelector('.product-price');
+      const oldEl   = card.querySelector('.product-old-price');
+      if (priceEl) priceEl.textContent = formatPrice(idr, lang);
+      if (oldEl && oldIdr) oldEl.textContent = formatPrice(oldIdr, lang);
+    });
+    const modalPriceEl = document.getElementById('buyNowProductPrice');
+    if (modalPriceEl && modalPriceEl.dataset.idr) {
+      modalPriceEl.textContent = formatPrice(parseInt(modalPriceEl.dataset.idr), lang);
+    }
+  }
+  function setLang(lang) {
+    currentLang = lang;
+    const t = LANG[lang];
+    document.getElementById('langMenu').classList.remove('open');
+    document.getElementById('langBtn').innerHTML = `${LANG_LABELS[lang]} <i class="bi bi-chevron-down" style="font-size:.6rem"></i>`;
+    document.querySelectorAll('.lang-menu-item').forEach(item => {
+      item.classList.toggle('active', item.dataset.lang === lang);
+    });
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (t[key] !== undefined) el.innerHTML = t[key];
+    });
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    document.getElementById('themeLabel').textContent = isDark ? t.themeTerang : t.themeGelap;
+    document.querySelectorAll('.btn-buy-wa').forEach(b => {
+      b.innerHTML = `<i class="bi bi-whatsapp"></i> ${t.beliWA}`;
+    });
+    updatePrices(lang);
+  }
+  function searchProducts(q) {
+    const query = q.trim().toLowerCase();
+    const clear = document.getElementById('searchClear');
+    const info  = document.getElementById('searchResultInfo');
+    clear.style.display = query ? '' : 'none';
+    if (!query) {
+      document.querySelectorAll('.game-item').forEach(gi => {
+        gi.style.display = '';
+        gi.classList.remove('active');
+        gi.querySelector('.products-panel').classList.remove('show');
+        gi.querySelectorAll('.product-card').forEach(c => c.style.display = '');
+      });
+      info.textContent = '';
+      return;
+    }
+    let total = 0;
+    document.querySelectorAll('.game-item').forEach(gi => {
+      const gameName = gi.querySelector('.game-name').textContent.toLowerCase();
+      const cards = gi.querySelectorAll('.product-card');
+      let found = 0;
+      cards.forEach(card => {
+        const match = (card.dataset.name||'').toLowerCase().includes(query)
+          || (card.dataset.cat||'').toLowerCase().includes(query)
+          || gameName.includes(query);
+        card.style.display = match ? '' : 'none';
+        if (match) found++;
+      });
+      gi.style.display = found ? '' : 'none';
+      if (found) { gi.classList.add('active'); gi.querySelector('.products-panel').classList.add('show'); }
+      else { gi.classList.remove('active'); gi.querySelector('.products-panel').classList.remove('show'); }
+      total += found;
+    });
+    info.textContent = total ? `Ditemukan ${total} produk untuk "${q}"` : `Tidak ada produk untuk "${q}"`;
+  }
+  function clearSearch() {
+    document.getElementById('searchInput').value = '';
+    searchProducts('');
+  }
+
+  function openWAChat() {
+    const t = LANG[currentLang];
+    window.open(`https://wa.me/${CONFIG.waNumber}?text=${encodeURIComponent(t.waMsg(CONFIG.storeName))}`, '_blank');
+  }
+</script>
+</body>
+</html>
